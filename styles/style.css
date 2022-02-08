@@ -378,10 +378,9 @@
 
 .footer__social-icons {
   display: flex;
-  position: relative;
   flex-direction: column;
-  position: absolute;
   right: 0px;
+  position: absolute;
 }
 
 .column-heading_margin_bottom {
