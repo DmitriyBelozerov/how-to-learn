@@ -23,7 +23,7 @@
   flex-direction: row;
   align-items: center;
   background-color: #f2f2f2;
-  z-index: -2;
+  z-index: 0;
 }
 
 
@@ -97,6 +97,7 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  z-index: 3;
 }
 
 .two-columns {
