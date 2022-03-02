@@ -1,3 +1,6 @@
+.red {
+  border: red solid 1px;
+}
 
 .page {
   min-width: 1100px;
@@ -16,6 +19,7 @@
   align-items: center;
   background-color: #f2f2f2;
   z-index: 0;
+  overflow: hidden;
 }
 
 .content {
@@ -29,8 +33,18 @@
   right: 0px;
   width: 765px;
   height: 608px;
-
 }
+
+@keyframes rotation_square-pic {
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation_square-pic 20s linear infinite;
+  }
 
 .logo_place_header {
   height: 32px;
@@ -79,6 +93,12 @@
   color: #2f80ed;
   text-decoration: none;
   z-index: 3;
+  opacity: 1;
+  transition: opacity 1s linear 0s;
+}
+
+.header__link:hover {
+  opacity: 0.4;
 }
 
 .two-columns {
@@ -93,6 +113,14 @@
   display: flex;
   justify-content: center;
 }
+
+.oakley {
+  padding-top: 160px;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
 
 
 .two-columns__main-text {
@@ -136,12 +164,38 @@
 
 
 .digits {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
+}
+
+.techniques {
+  padding-top: 100px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+
+.video {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.video__iframes {
+  transform: translate(0px, 50px);
+}
+
+.video__iframe {
+  margin-right: 20px;
 }
 
 .section-title {
@@ -262,7 +316,14 @@
   line-height: 51px;
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 1s linear 0s;
 }
+
+.feynman__link:hover {
+  opacity: 0.4;
+}
+
+
 
 .kaufman {
   padding: 90px 0 90px 0;
@@ -346,7 +407,19 @@
   font-size: 18px;
   text-decoration: none;
   color: white;
+  transition: opacity 1s linear 0s;
 }
+
+.footer__column-link:hover {
+  opacity: 0.4;
+}
+
+
+
+
+
+
+
 .footer__column-links {
   list-style: none;
   list-style-position: inside;
@@ -359,4 +432,139 @@
   height: 16px;
   width: 16px;
   margin: 0 10px 0 0;
+}
+
+.cards {
+  width: 1020px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.cards__item {
+  padding: 0;
+  margin: 0 50px 0 50px;
+  width: 240px;
+
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.cards__title {
+  margin: 0 0 16px 0;
+  padding: 0%;
+  line-height: 1.15;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 0;
+  padding: 0%;
+  line-height: 23px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.khan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+
+.khan__container {
+  width: 80%;
+}
+
+.khan__author{
+margin: 0;
+padding: 0;
+line-height: 42px;
+font-size: 30px;
+}
+
+.khan__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.khan__quote {
+  padding: 0;
+  margin: 50px 0 36px 0;
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.khan__quote-author {
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.khan__quote-author-subline {
+  margin: 0 0 68px 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+}
+
+.khan__book-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.khan__book-pic {
+  height: 620px;
+  width: 608px;
+  margin-right: 48px;
+}
+
+.khan__buy-link {
+  color: #2f80ed;
+  text-decoration: none;
+  opacity: 1;
+  line-height: 42px;
+  font-size: 30px;
+  transition: opacity 1s linear 0s;
+}
+
+.khan__buy-link:hover {
+  opacity: 0.4;
+}
+
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources__logo-zone {
+  margin-top: 80px;
+  width: 1100px;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
 }
