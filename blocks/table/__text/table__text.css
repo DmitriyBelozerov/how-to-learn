@@ -1,0 +1,10 @@
+.table__text {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.table__text:nth-last-of-type(1) {
+  margin-top: 20px;
+}
