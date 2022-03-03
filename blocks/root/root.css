@@ -5,13 +5,4 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-@keyframes rotation_square-pic {
 
-  to {
-      transform: rotate(360deg);
-  }
-}
-
-.rotation {
-  animation: rotation_square-pic 20s linear infinite;
-}
